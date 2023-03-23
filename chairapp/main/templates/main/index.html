@@ -1,0 +1,48 @@
+{% extends 'main/htmllayout.html' %}
+{% load static %}
+{% block title %} Famous Chairs {% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{%static '/main/css/index.css'%}">
+    {% include 'main/header.html' with pagetitle="Famous Chairs" %}
+
+    <div class="middle-page-content">
+        <p>Online store of designer chairs created by world famous creators.
+        The project is jointly with HSE design school and HSE Design Futures laboratory.</p>
+        <p><a href="#top">Watch video >>></a></p>
+        <div class="video" id="top">
+            <iframe width="85%" height="675px"
+                src="https://www.youtube.com/embed/zVve6CA2tYY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="lists">
+            <ol>
+                <li>Grand Confort (LC-2)</li>
+                <ol type="a">
+                    <li>Red and Blue Chair</li>
+                    <li>Tulip Chair</li>
+                    <li>Louis XVI chair</li>
+                </ol>
+            </ol>
+            <ul>
+                <li>Monobloc Chair</li>
+                <li>Red and Blue Chair</li>
+                <li>Ghost chair</li>
+                <li>Stool 60</li>
+            </ul>
+            <ol>
+                <li>B3 Wassily</li>
+                <li>Bibendum Chair</li>
+                <li>Navy Chair</li>
+                <li>Chaise A</li>
+            </ol>
+        </div>
+    </div>
+
+    {% include 'main/footer.html' %}
+{% endblock %}

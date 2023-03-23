@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=JetBrains+Mono:wght@500&display=swap');
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  background-color: #D8D8D8;
+}
+
+h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 87%;
+
+    text-align: center;
+    color: #ABABAB;
+}
+
+h3 {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 163%;
+
+    color: #ABABAB;
+}
+
+p {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 163%;
+
+    width: 53%;
+    margin-left: 7.5%;
+
+    color: #6A6A6A;
+}
+
+a {
+    text-decoration: none;
+    color: #6A6A6A;
+}
+
+.move-to-next-screen {
+}

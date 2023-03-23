@@ -1,0 +1,122 @@
+.nav-list ul a #cart-link{
+    color: #909090;
+}
+
+form {
+    width: 75%;
+    margin-left: 7.5%;
+    background-color: white;
+    border-radius: 33px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+form h2{
+    text-align: left;
+    width: 5%;
+}
+
+form p{
+    margin-left: 0;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding-bottom: 2%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-bottom: 2px solid #ABABAB;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 14px;
+    color: #ABABAB;
+    font-weight: 100;
+    line-height: 123%;
+
+  }
+
+  input[type=text]:focus {
+    border-bottom: 2px solid black;
+  }
+
+
+.txt {
+    width: 500px;
+    height: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 14px;
+    color:#D8D8D8;
+    font-weight: 100;
+    line-height: 123%
+
+}
+
+
+select {
+    width: 100%;
+    padding-bottom: 2%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-bottom: 2px solid #ABABAB;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 14px;
+    color: #ABABAB;
+    font-weight: 100;
+    line-height: 123%;
+
+  }
+
+  select:focus {
+    border-bottom: 2px solid black;
+  }
+
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    background-color: white;
+    border-radius: 33px;
+    width: 85%;
+    padding-left: 35%;
+
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+button h2 {
+    transition-duration: 500ms;
+}
+
+button:hover{
+    background-color: #ABABAB;
+    transition-duration: 500ms;
+}
+
+button:hover h2{
+    color: white;
+    transition-duration: 500ms;
+}
+
+

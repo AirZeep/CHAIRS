@@ -1,0 +1,49 @@
+.nav-list ul a #cart-link{
+    color: #909090;
+}
+
+.cart-block {
+    width: 75%;
+    margin-left: 7.5%;
+    background-color: white;
+    border-radius: 33px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.cart-block h2{
+    text-align: left;
+}
+
+#payment{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+
+    margin-top: 60px;
+    background-color: white;
+    border-radius: 33px;
+    padding-left: 35%;
+    transition-duration: 500ms;
+}
+
+
+#payment:hover {
+    background-color: #ABABAB;
+    transition-duration: 500ms;
+}
+
+
+.cart-page a h2 {
+    transition-duration: 500ms;
+}
+
+
+.cart-page a:hover h2{
+    color:white;
+    transition-duration: 500ms;
+}

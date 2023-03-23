@@ -1,0 +1,23 @@
+{% extends 'main/htmllayout.html' %}
+{% load static %}
+
+{% block title %} Title {% endblock %}
+
+
+{% block content %}
+    <link rel = "stylesheet" href="{% static '/main/css/market.css' %}">
+    {% include 'main/header.html' with pagetitle="Famous Chairs Market" %}
+
+
+
+    <div class="wrapper">
+    {% for el in chairs %}
+        {% include 'main/chaicard.html' with price=el.price chairname=el.chair_name pic=el.pic cardid=el.id %}
+    {% endfor %}
+    </div>
+
+    {% include 'main/footer.html' %}
+
+    <script src="{% static '/main/js/market.js' %}"></script>
+
+{% endblock %}

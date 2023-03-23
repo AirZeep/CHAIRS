@@ -1,0 +1,58 @@
+{% extends 'main/htmllayout.html' %}
+{% load static %}
+{% block title %} Famous Chairs {% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{%static '/main/css/userinfo.css'%}">
+    {% include 'main/header.html' with pagetitle="Famous Chairs Cart" %}
+    <div>
+        <form id="user-form" action="{% url 'insert_user_info' %}" method="POST">
+            {% csrf_token %}
+            <h2>User Information</h2>
+
+            <input type = text placeholder = "Name *" class="button_style" name="name">
+            <br>
+            <input type = text placeholder = "Phone number *" class="button_style" name="phone_number"
+            maxlength="12">
+            <br>
+            <input type = text placeholder = "Email" class="button_style" name="email">
+
+            <p class="txt">
+                Leave us your mailing address
+                to receive a newsletter about new arrivals and news from the world of design
+            </p>
+
+            <br>
+            <br>
+            <h2>Delivery</h2>
+
+            <select name="city" id="city-select">
+                <option value="">City *</option>
+                <option value="petersburg">Saint-Petersburg</option>
+                <option value="samara">Moscow</option>
+                <option value="perm">Samara</option>
+                <option value="novosibirsk">Kazan</option>
+            </select>
+            <input type = text placeholder = "Street *" class="button_style" name="street">
+            <br>
+            <input type = text placeholder = "House *" class="button_style" name="house">
+            <br>
+            <input type = text placeholder = "Floor" class="button_style" name="floor">
+            <br>
+            <input type = text placeholder = "Apartment" class="button_style" name="apartment">
+
+            <p class="txt">
+                Leave us your mailing address
+                to receive a newsletter about new arrivals and news from the world of design
+            </p>
+
+        </form>
+
+        <button type="submit" form="user-form">
+            <h2>Payment</h2>
+        </button>
+    </div>
+
+
+    {% include 'main/footer.html' %}
+{% endblock %}

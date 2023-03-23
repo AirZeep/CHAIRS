@@ -1,0 +1,23 @@
+{% extends 'main/htmllayout.html' %}
+{% load static %}
+{% block title %} Famous Chairs {% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{%static '/main/css/cart.css'%}">
+    {% include 'main/header.html' with pagetitle="Famous Chairs Cart" %}
+    <div class="cart-page">
+        <div class="cart-block">
+            <h2>{{amount}} Products for</h2>
+            <h2>{{total_price}}$</h2>
+
+            {% for item in items %}
+                    {% include 'main/cart-item.html' with price=item.chair.price chairname=item.chair.chair_name quantity=item.quantity mini_pic=item.chair.mini_pic%}
+            {% endfor %}
+            <br>
+        </div>
+        <a href="userinformation"  id="payment">
+            <h2>Payment</h2>
+        </a>
+    </div>
+    {% include 'main/footer.html' %}
+{% endblock %}

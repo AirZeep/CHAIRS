@@ -1,0 +1,15 @@
+{% load static %}
+<head>
+    <link rel = "stylesheet" href="{% static '/main/css/cart-item.css' %}">
+</head>
+<div class="cart-item-container">
+    <img src="static/main/img/{{mini_pic}}" alt="mini-picture">
+    <div class="item-info">
+        <h3 id="item-price">{{price}}$</h3>
+        <hr>
+        <div class="adding-item-row">
+            <h3>{{chairname}}</h3>
+            <h3>- {{quantity}} +</h3>
+        </div>
+    </div>
+</div>

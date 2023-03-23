@@ -1,0 +1,22 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{%static '/main/css/chaircard.css'%}">
+</head>
+  <input id={{cardid}} type="checkbox" name="apple"/>
+  <label for="{{cardid}}">
+    <div class="cardarea update-cart" data-product="{{cardid}}" data-action="add">
+      <div class="miniheader">
+        <p>{{price}}$</p>
+        <div class="addsign">
+          <div class="vertical"></div>
+          <div class="horizontal"></div>
+        </div>
+      </div>
+      <div class="cardtitle">
+        <h2>{{chairname}}</h2>
+      </div>
+      <div class="pic">
+        <img src="static/main/img/{{pic}}" alt="chair">
+      </div>
+    </div>
+  </label>

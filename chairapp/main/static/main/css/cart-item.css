@@ -1,0 +1,24 @@
+.cart-item-container {
+    display: flex;
+    align-items: row;
+    width: 100%;
+}
+
+.cart-item-container img {
+    width: 18%;
+    height: auto;
+}
+
+.item-info{
+    width: 100%;
+}
+
+.adding-item-row {
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+}
+
+#item-price {
+    text-align: right;
+}

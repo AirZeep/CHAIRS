@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 87%;
+
+    color: #FFFFFF;
+}
+
+.pagetitle {
+    width: 50%;
+    margin-left: 7.5%;
+}
+
+.nav-list {
+    padding-right: 7.5%;
+
+}
+
+.nav-list ul {
+    list-style-type: none;
+    text-align: right;
+
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.nav-list ul a {
+    text-decoration: none;
+}
+
+.nav-list ul a li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 300%;
+
+
+    color: white;
+}
+
+
+
+
